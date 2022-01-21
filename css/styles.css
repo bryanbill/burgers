@@ -32,3 +32,40 @@ button {
   position: relative;
   top: 0.5rem;
 }
+
+input {
+  border: none;
+  border-bottom: 1px solid #e1ebe6;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  width: 100%;
+}
+
+/* Colors */
+
+.bg-white {
+  background: #fff;
+}
+
+.bg-yellow {
+  background: #f6b400;
+}
+
+.bg-grey {
+  background: #e1ebe6;
+}
+
+.bg-green {
+  background: rgb(247, 253, 246);
+}
+
+/* Utilities */
+
+.border {
+  border: 1px solid #e1ebe6;
+}
+
+.border > .border-purple {
+  border-color: #e1ebe6;
+}
