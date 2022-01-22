@@ -1,0 +1,52 @@
+/* 
+Author: Brian Omondi
+Email: brian.omondi@student.moringaschool.com
+Type: CSS Layout
+Date: 22/01/2022
+Licence: MIT
+*/
+
+@import url("./utility.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  /* Font-family used in the design is Poppins, providing a fallback of Sans-Serif for older browsers */
+  font-family: "Poppins", sans-serif;
+  height: 100%;
+  background: #fafafa;
+}
+
+/* Navbar */
+
+.navbar {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  height: 50px;
+  flex-wrap: nowrap;
+}
+.nav-brand {
+  text-decoration: none;
+  font-size: 1rem;
+}
+.navbar-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+.navbar .nav-item {
+  padding: 0 25px;
+}
+.navbar-collapse {
+  flex-basis: 100%;
+  flex-grow: 1;
+}

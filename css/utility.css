@@ -1,7 +1,7 @@
 /* 
 Author: Brian Omondi
 Email: brian.omondi@student.moringaschool.com
-Type: CSS Layout and Utility
+Type: Utility
 Date: 22/01/2022
 Licence: MIT
 */
@@ -10,49 +10,6 @@ Licence: MIT
 @import url(http://fonts.googleapis.com/css?family=Poppins:400,300,600,700);
 
 /* Layout */
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html,
-body {
-  /* Font-family used in the design is Poppins, providing a fallback of Sans-Serif for older browsers */
-  font-family: "Poppins", sans-serif;
-  height: 100%;
-  background: #fafafa;
-}
-
-nav > .navbar {
-  padding-top: 1rem;
-  top: 0;
-  width: 100%;
-  z-index: 1;
-  /* Prevent the navbar from being scrolled off the screen */
-  position: fixed;
-  box-shadow: 0 10px rgba(0, 0, 0, 0.2);
-}
-
-button > .btn-active,
-.btn:focus {
-  border-radius: 10px;
-  border: none;
-  cursor: pointer;
-  font-size: 1.5rem;
-  font-weight: 600;
-  padding: 0.5rem 1rem;
-  position: relative;
-  top: 0.5rem;
-}
-
-input input:active,
-input:focus {
-  border: solid 1px #ccc;
-  box-shadow: none;
-  outline: none;
-}
 
 .container {
   width: 100%;
@@ -69,6 +26,15 @@ input:focus {
 .col-6 {
   flex: 0 0 auto;
   width: 50%;
+}
+/* Displays */
+
+.d-flex {
+  display: flex;
+}
+
+.d-block {
+  display: block;
 }
 
 /* Utilities */
@@ -88,8 +54,8 @@ input:focus {
 .pull-right {
   float: right;
 }
-.align-items-center {
-  align-items: center;
+.align-center {
+  align-items: center !important;
 }
 .position-relative {
   position: relative;
@@ -122,6 +88,10 @@ input:focus {
 .bg-primary {
   background: #f6b400;
 }
+/* TODO: FIX THIS */
+.bg-red {
+  background: #c20928;
+}
 
 /* Heights */
 .h-100 {
@@ -134,7 +104,7 @@ input:focus {
   height: 50%;
 }
 .h-25 {
-  height: 25%;
+  height: 25% !important;
 }
 .h-20 {
   height: 20%;
@@ -144,4 +114,28 @@ input:focus {
 }
 .h-5 {
   height: 5%;
+}
+
+/* Margins */
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+.ms-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Lists */
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+ul {
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+  display: block;
 }
