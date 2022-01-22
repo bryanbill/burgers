@@ -60,11 +60,11 @@ Licence: MIT
 /* Utilities */
 
 .border {
-  border: 1px solid #e1ebe6;
+  border: 1px solid;
 }
 
-.border > .border-purple {
-  border-color: #e1ebe6;
+.border-purple {
+  border-color: #ae8d90;
 }
 
 .border-none {
@@ -80,6 +80,9 @@ Licence: MIT
 
 .pull-right {
   float: right;
+}
+.text-center {
+  text-align: center;
 }
 .align-center {
   align-items: center !important;
@@ -177,7 +180,9 @@ Licence: MIT
   width: 100%;
 }
 /* Margins */
-
+.m-3-px {
+  margin: 3px;
+}
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -186,8 +191,15 @@ Licence: MIT
   margin-right: auto;
 }
 
-/* Padding */
+.mt-4 {
+  margin-top: 1.5rem !important;
+}
 
+/* Padding */
+.px-2 {
+  padding-right: 0.5rem !important;
+  padding-left: 0.5rem !important;
+}
 .px-4 {
   padding-right: 1.5rem !important;
   padding-left: 1.5rem !important;

@@ -12,7 +12,6 @@ Licence: MIT
   margin: 0;
   padding: 0;
   box-sizing: border-box;
- 
 }
 
 html,
@@ -128,4 +127,15 @@ a.nav-link.active span {
 
   padding: 12px 30px;
   border-radius: 50px 50px 0 50px;
+}
+
+/* Services */
+.service-card {
+  border-radius: 15px;
+  padding: 3rem;
+}
+.desc {
+    padding-top: 10px;
+  font-size: 19px;
+  line-height: 28px;
 }
