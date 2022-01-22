@@ -8,6 +8,7 @@ Licence: MIT
 
 /* Import External Fonts */
 @import url(http://fonts.googleapis.com/css?family=Poppins:400,300,600,700);
+@import url(http://fonts.googleapis.com/css?family=Lobster:400,300,600,700);
 
 /* Layout */
 
@@ -19,13 +20,29 @@ Licence: MIT
   margin-left: auto;
 }
 .row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
   display: flex;
   flex-wrap: wrap;
+  margin-top: calc(var(--bs-gutter-y) * -1);
+  margin-right: calc(var(--bs-gutter-x) * -0.5);
+  margin-left: calc(var(--bs-gutter-x) * -0.5);
 }
-
+.col {
+  flex: 0 0 auto;
+  width: 100%;
+}
 .col-6 {
   flex: 0 0 auto;
   width: 50%;
+}
+.col-3 {
+  flex: 0 0 auto;
+  width: 25%;
+}
+.col-4 {
+  flex: 0 0 auto;
+  width: 33.3333%;
 }
 /* Displays */
 
@@ -35,6 +52,9 @@ Licence: MIT
 
 .d-block {
   display: block;
+}
+.d-none {
+  display: none;
 }
 
 /* Utilities */
@@ -51,11 +71,21 @@ Licence: MIT
   border: none;
 }
 
+.border-radius-sm {
+  border-radius: 25%;
+}
+.border-radius-md {
+  border-radius: 50%;
+}
+
 .pull-right {
   float: right;
 }
 .align-center {
   align-items: center !important;
+}
+.justify-center {
+  justify-content: center !important;
 }
 .position-relative {
   position: relative;
@@ -86,7 +116,25 @@ Licence: MIT
 }
 
 .bg-primary {
-  background: #f6b400;
+  background: #fa9529;
+}
+
+.bg-black {
+  background: #000;
+}
+
+.text-white {
+  color: #fff;
+}
+.text-black {
+  color: #000;
+}
+.text-yellow {
+  color: #f6b400;
+}
+
+.bg-lime {
+  background: #f7fdf6;
 }
 /* TODO: FIX THIS */
 .bg-red {
@@ -115,7 +163,19 @@ Licence: MIT
 .h-5 {
   height: 5%;
 }
-
+.h-auto {
+  height: auto;
+}
+.h-max {
+  height: 100%;
+}
+/* Width */
+.w.auto {
+  width: auto;
+}
+.w-100 {
+  width: 100%;
+}
 /* Margins */
 
 .mb-2 {
@@ -126,6 +186,19 @@ Licence: MIT
   margin-right: auto;
 }
 
+/* Padding */
+
+.px-4 {
+  padding-right: 1.5rem !important;
+  padding-left: 1.5rem !important;
+}
+.py-5 {
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
+}
+.pt-5 {
+  padding-top: 3rem !important;
+}
 /* Lists */
 li {
   display: list-item;
@@ -138,4 +211,16 @@ ul {
   margin-inline-end: 0px;
   padding-inline-start: 40px;
   display: block;
+}
+
+/* Links */
+
+/* Badges */
+.badge {
+  font-size: 11px;
+  height: 20px;
+  width: 20px;
+
+  right: 9px;
+  top: 10px;
 }
