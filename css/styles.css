@@ -9,8 +9,11 @@
   box-sizing: border-box;
 }
 
+html,
 body {
+  /* Font-family used in the design is Poppins, providing a fallback of Sans-Serif for older browsers */
   font-family: "Poppins", sans-serif;
+  height: 100%;
   background: #fafafa;
 }
 
@@ -20,9 +23,11 @@ nav {
   top: 0;
   width: 100%;
   z-index: 1;
+  position: absolute;
 }
 
-button {
+button > .btn-active,
+.btn:focus {
   border-radius: 10px;
   border: none;
   cursor: pointer;
@@ -33,13 +38,12 @@ button {
   top: 0.5rem;
 }
 
-input {
-  border: none;
-  border-bottom: 1px solid #e1ebe6;
-  padding: 0.5rem;
-  font-size: 1.5rem;
-  font-weight: 600;
-  width: 100%;
+input,
+input:active,
+input:focus {
+  border: solid 1px #ccc;
+  box-shadow: none;
+  outline: none;
 }
 
 /* Colors */
@@ -68,4 +72,8 @@ input {
 
 .border > .border-purple {
   border-color: #e1ebe6;
+}
+
+.pull-right {
+  float: right;
 }
