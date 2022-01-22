@@ -1,3 +1,11 @@
+/* 
+Author: Brian Omondi
+Email: brian.omondi@student.moringaschool.com
+Type: CSS Layout and Utility
+Date: 22/01/2022
+Licence: MIT
+*/
+
 /* Import External Fonts */
 @import url(http://fonts.googleapis.com/css?family=Poppins:400,300,600,700);
 
@@ -9,20 +17,26 @@
   box-sizing: border-box;
 }
 
+html,
 body {
+  /* Font-family used in the design is Poppins, providing a fallback of Sans-Serif for older browsers */
   font-family: "Poppins", sans-serif;
+  height: 100%;
   background: #fafafa;
 }
 
-nav {
-  padding: 1rem;
-  position: fixed;
+nav > .navbar {
+  padding-top: 1rem;
   top: 0;
   width: 100%;
   z-index: 1;
+  /* Prevent the navbar from being scrolled off the screen */
+  position: fixed;
+  box-shadow: 0 10px rgba(0, 0, 0, 0.2);
 }
 
-button {
+button > .btn-active,
+.btn:focus {
   border-radius: 10px;
   border: none;
   cursor: pointer;
@@ -33,13 +47,58 @@ button {
   top: 0.5rem;
 }
 
-input {
-  border: none;
-  border-bottom: 1px solid #e1ebe6;
-  padding: 0.5rem;
-  font-size: 1.5rem;
-  font-weight: 600;
+input input:active,
+input:focus {
+  border: solid 1px #ccc;
+  box-shadow: none;
+  outline: none;
+}
+
+.container {
   width: 100%;
+  padding-right: 0%;
+  padding-left: 0%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-6 {
+  flex: 0 0 auto;
+  width: 50%;
+}
+
+/* Utilities */
+
+.border {
+  border: 1px solid #e1ebe6;
+}
+
+.border > .border-purple {
+  border-color: #e1ebe6;
+}
+
+.border-none {
+  border: none;
+}
+
+.pull-right {
+  float: right;
+}
+.align-items-center {
+  align-items: center;
+}
+.position-relative {
+  position: relative;
+}
+.position-absolute {
+  position: absolute;
+}
+.position-fixed {
+  position: fixed;
 }
 
 /* Colors */
@@ -60,12 +119,29 @@ input {
   background: rgb(247, 253, 246);
 }
 
-/* Utilities */
-
-.border {
-  border: 1px solid #e1ebe6;
+.bg-primary {
+  background: #f6b400;
 }
 
-.border > .border-purple {
-  border-color: #e1ebe6;
+/* Heights */
+.h-100 {
+  height: 100%;
+}
+.h-75 {
+  height: 75%;
+}
+.h-50 {
+  height: 50%;
+}
+.h-25 {
+  height: 25%;
+}
+.h-20 {
+  height: 20%;
+}
+.h-10 {
+  height: 10%;
+}
+.h-5 {
+  height: 5%;
 }
