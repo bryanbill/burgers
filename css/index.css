@@ -12,6 +12,7 @@ Licence: MIT
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+ 
 }
 
 html,
@@ -49,4 +50,82 @@ body {
 .navbar-collapse {
   flex-basis: 100%;
   flex-grow: 1;
+}
+.nav-link {
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+}
+a.nav-link {
+  font-weight: 500;
+  font-size: 20px;
+  color: #000;
+}
+
+a.nav-link span {
+  padding-bottom: 5px;
+}
+
+a.nav-link.active {
+  color: #000 !important;
+}
+
+a.nav-link.active span {
+  border-bottom: 7px solid #fa9529;
+}
+
+.nav-item:last-child {
+  padding-left: 30px;
+}
+
+/* Hero Section */
+
+.hero {
+  background: inherit;
+  overflow: hidden;
+}
+
+.hero-skew {
+  transform: skewX(-10deg) translateX(100px);
+  top: 0;
+  bottom: 0;
+  width: 150%;
+}
+.hero-right {
+  overflow: hidden !important;
+}
+.hero-burger {
+  position: absolute;
+  transform: skewX(10deg);
+  bottom: -10px;
+  height: 80%;
+  left: -30px;
+}
+
+/* Typography */
+.brand-name {
+  font-family: "Lobster", "Poppins", "serif";
+  font-weight: 900;
+  font-size: 24px;
+}
+.motto {
+  font-size: 40px;
+  font-weight: 900;
+}
+.motto-sub {
+  font-size: 20px;
+  font-weight: 400;
+  color: #5c5c5c;
+}
+
+/* Buttons */
+.order-btn {
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+}
+.order-btn button {
+  outline: none;
+
+  padding: 12px 30px;
+  border-radius: 50px 50px 0 50px;
 }

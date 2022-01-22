@@ -1,49 +1,97 @@
 <!-- Burger Place -->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./assets/logo.png" rel="icon" />
-    <link rel="stylesheet" href="./css/index.css" />
-    <title>Burger Place</title>
-  </head>
-  <body>
-    <!-- Header Section -->
-    <section id="header" class="container h-100">
-      <div class="container">
-        <nav class="navbar bg-transparent position-fixed">
-          <div class="container d-flex">
-            <a class="navbar-brand align-center d-flex" href="index.html">
-              <img src="./assets/logo.png" class="nav-brand h-75" alt="logo" />
-              <div class="title font-burger">Burger Place</div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="./assets/logo.png" rel="icon" />
+  <link rel="stylesheet" href="./css/index.css" />
+  <title>Burger Place</title>
+</head>
+
+<body>
+  <!-- Header Section -->
+  <section id="header" class="container h-auto">
+    <nav class="navbar bg-transparent position-fixed">
+      <div class="container d-flex">
+        <a class="navbar-brand align-center d-flex">
+          <img src="./assets/logo.png" class="nav-brand h-75" alt="logo" />
+          <div class="brand-name">Bur<span class="text-yellow">ger</span></div>
+        </a>
+        <div class="navbar-collapse align-center">
+          <ul class="navbar-nav ms-auto mb-2 align-center pull-right">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page">
+                <span>
+                  Home
+                </span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span>Offers</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span>Contact</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+              <span>About</span>
             </a>
-            <div class="navbar-collapse align-center">
-              <ul class="navbar-nav ms-auto mb-2 align-center pull-right">
-                <li class="nav-item">Home</li>
-                <li class="nav-item" title="Services">
-                  <a class="nav-link" href="#">
-                    <span>Services</span>
-                  </a>
-                </li>
-                <li class="nav-item">Menu</li>
-                <li class="nav-item">Offers</li>
-                <li class="nav-item cart-basket" title="Cart">
-                  <span>
-                    <img src="./assets/basket.png" alt="cart" />
-                    <div class="badge bg-red">2</div>
-                  </span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </div>
-    </section>
-    <!-- Hero Section -->
-    <div class="hero bg-white h-24">
-      <div class="row h-max"></div>
+          </li>
+            <li class="nav-item cart-basket" title="Cart">
+              <span>
+                <img src="./assets/basket.png" alt="cart" />
+                <div class="badge d-flex text-white align-center border-radius-md position-absolute justify-center bg-primary">2</div>
+              </span>
+            </li>
+          </ul>
+        </div>
+
+    </nav>
     </div>
-  </body>
+  </section>
+  <!-- End Header Section -->
+
+  <!-- Hero Section -->
+  <section id="hero" class="container col h-100">
+    <div class="hero row h-max">
+      <div class="col-6 align-center position-relative d-flex px-4">
+        <div class="d-block">
+          <div class="motto">Rain or shine, <br> its time to dine.</div>
+          <div class="motto-sub pt-5">We cook & deliver the tastiest burgers <br>right away to your designated location
+          </div>
+          <div class="order-btn">
+            <button class="bg-primary border-none">Order Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 position-relative d-block  hero-right ">
+        <div class="hero-skew  bg-yellow h-100">
+          <img class="hero-burger" src="./assets/[CITYPNG 1.png">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Hero Section -->
+  <!-- Start Service Section -->
+  <section id="service" class="bg-lime px-4 py-5">
+    <div class="row pt-5 align-center">
+      <div class="col-4">
+        1
+      </div>
+      <div class="col-4">
+        2
+    </div>
+      <div class="col-4">
+        3
+    </div>
+  </section>
+</body>
+
 </html>
