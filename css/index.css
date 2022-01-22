@@ -23,6 +23,7 @@ body {
 }
 
 /* Navbar */
+
 .navbar {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -30,9 +31,22 @@ body {
   right: 0;
   left: 0;
   z-index: 1;
+  height: 50px;
+  flex-wrap: nowrap;
 }
 .nav-brand {
   text-decoration: none;
   font-size: 1rem;
-  margin-right: 1rem;
+}
+.navbar-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+.navbar .nav-item {
+  padding: 0 25px;
+}
+.navbar-collapse {
+  flex-basis: 100%;
+  flex-grow: 1;
 }

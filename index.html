@@ -12,42 +12,34 @@
   <body>
     <!-- Header Section -->
     <section id="header" class="container h-100">
-      <nav class="navbar bg-transparent">
-        <a class="navbar-brand d-flex align-items-center" href="index.html">
-          <img src="./assets/logo.png" class="nav-brand h-25" alt="logo" />
-          <div class="title font-burger">Burger Place</div>
-        </a>
-        <div class="pull-right">
-          <ul class="" title="navbar items">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">
-                <span> Home </span>
-              </a>
-            </li>
-            <li class="nav-item" title="Services">
-              <a class="nav-link" href="#">
-                <span>Services</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" title="Menu">
-                <span>Menu</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" title="Offers">
-                <span>Offers</span>
-              </a>
-            </li>
-            <li class="nav-item cart-basket" title="Cart">
-              <span>
-                <img src="./assets/basket.png" alt="cart" />
-                <div class="badge bg-red border-radius-xl">2</div>
-              </span>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <div class="container">
+        <nav class="navbar bg-transparent position-fixed">
+          <div class="container d-flex">
+            <a class="navbar-brand align-center d-flex" href="index.html">
+              <img src="./assets/logo.png" class="nav-brand h-75" alt="logo" />
+              <div class="title font-burger">Burger Place</div>
+            </a>
+            <div class="navbar-collapse align-center">
+              <ul class="navbar-nav ms-auto mb-2 align-center pull-right">
+                <li class="nav-item">Home</li>
+                <li class="nav-item" title="Services">
+                  <a class="nav-link" href="#">
+                    <span>Services</span>
+                  </a>
+                </li>
+                <li class="nav-item">Menu</li>
+                <li class="nav-item">Offers</li>
+                <li class="nav-item cart-basket" title="Cart">
+                  <span>
+                    <img src="./assets/basket.png" alt="cart" />
+                    <div class="badge bg-red">2</div>
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
     </section>
     <!-- Hero Section -->
     <div class="hero bg-white h-24">

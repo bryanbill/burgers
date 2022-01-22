@@ -32,6 +32,11 @@ Licence: MIT
 .d-flex {
   display: flex;
 }
+
+.d-block {
+  display: block;
+}
+
 /* Utilities */
 
 .border {
@@ -49,8 +54,8 @@ Licence: MIT
 .pull-right {
   float: right;
 }
-.align-items-center {
-  align-items: center;
+.align-center {
+  align-items: center !important;
 }
 .position-relative {
   position: relative;
@@ -83,6 +88,10 @@ Licence: MIT
 .bg-primary {
   background: #f6b400;
 }
+/* TODO: FIX THIS */
+.bg-red {
+  background: #c20928;
+}
 
 /* Heights */
 .h-100 {
@@ -95,7 +104,7 @@ Licence: MIT
   height: 50%;
 }
 .h-25 {
-  height: 25%;
+  height: 25% !important;
 }
 .h-20 {
   height: 20%;
@@ -105,4 +114,28 @@ Licence: MIT
 }
 .h-5 {
   height: 5%;
+}
+
+/* Margins */
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+.ms-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Lists */
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+ul {
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+  display: block;
 }
