@@ -17,13 +17,14 @@ body {
   background: #fafafa;
 }
 
-nav {
-  padding: 1rem;
-  position: fixed;
+nav > .navbar {
+  padding-top: 1rem;
   top: 0;
   width: 100%;
   z-index: 1;
-  position: absolute;
+  /* Prevent the navbar from being scrolled off the screen */
+  position: fixed;
+  box-shadow: 0 10px rgba(0, 0, 0, 0.2);
 }
 
 button > .btn-active,
@@ -64,6 +65,10 @@ input:focus {
   background: rgb(247, 253, 246);
 }
 
+.bg-primary {
+  background: #f6b400;
+}
+
 /* Utilities */
 
 .border {
@@ -72,6 +77,10 @@ input:focus {
 
 .border > .border-purple {
   border-color: #e1ebe6;
+}
+
+.border-none{
+  border: none;
 }
 
 .pull-right {
