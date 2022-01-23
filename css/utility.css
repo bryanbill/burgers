@@ -114,6 +114,9 @@ Licence: MIT
 .space-between {
   justify-content: space-between;
 }
+.space-around{
+  justify-content: space-around;
+}
 .position-relative {
   position: relative;
 }
@@ -268,6 +271,9 @@ Licence: MIT
 }
 .pt-10{
   padding-top: 5rem;
+}
+.pb-10{
+  padding-bottom: 5rem;
 }
 /* Lists */
 li {
