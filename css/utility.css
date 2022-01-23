@@ -63,6 +63,10 @@ Licence: MIT
   border: 1px solid;
 }
 
+.border-bottom {
+  border-bottom: 1px solid;
+}
+
 .border-purple {
   border-color: #ae8d90;
 }
@@ -83,6 +87,10 @@ Licence: MIT
 }
 .text-center {
   text-align: center;
+}
+.text-bold {
+  font-weight: 900;
+  font-size: 24px;
 }
 .align-center {
   align-items: center !important;
@@ -136,6 +144,10 @@ Licence: MIT
   color: #f6b400;
 }
 
+.underline-yellow {
+  border-bottom: 8px solid #f6b400;
+}
+
 .bg-lime {
   background: #f7fdf6;
 }
@@ -179,6 +191,10 @@ Licence: MIT
 .w-100 {
   width: 100%;
 }
+
+.w-min {
+  width: 5%;
+}
 /* Margins */
 .m-3-px {
   margin: 3px;
@@ -196,6 +212,9 @@ Licence: MIT
 }
 
 /* Padding */
+.pb-4-px {
+  padding-bottom: 4px;
+}
 .px-2 {
   padding-right: 0.5rem !important;
   padding-left: 0.5rem !important;
