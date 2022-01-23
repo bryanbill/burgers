@@ -12,7 +12,6 @@ Licence: MIT
   margin: 0;
   padding: 0;
   box-sizing: border-box;
- 
 }
 
 html,
@@ -125,7 +124,32 @@ a.nav-link.active span {
 }
 .order-btn button {
   outline: none;
-
   padding: 12px 30px;
   border-radius: 50px 50px 0 50px;
+}
+
+/* Services */
+.service-card {
+  border-radius: 15px;
+  padding: 3rem;
+}
+.desc {
+  padding-top: 10px;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+/* Menu */
+
+.card {
+  transition: all 0.2s linear;
+  border-radius: 20px;
+}
+
+/* Double Decker */
+.left{
+    order: 1;
+}
+.right{
+    order: 2;
 }

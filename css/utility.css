@@ -57,20 +57,37 @@ Licence: MIT
   display: none;
 }
 
+/* Overflow */
+.overflow-hidden {
+  overflow: hidden;
+}
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+.overflow-y-hidden {
+  overflow-y: hidden;
+}
+
 /* Utilities */
 
 .border {
-  border: 1px solid #e1ebe6;
+  border: 1px solid;
 }
 
-.border > .border-purple {
-  border-color: #e1ebe6;
+.border-bottom {
+  border-bottom: 1px solid;
+}
+
+.border-purple {
+  border-color: #ae8d90;
 }
 
 .border-none {
   border: none;
 }
-
+.border-radius {
+  border-radius: 10px;
+}
 .border-radius-sm {
   border-radius: 25%;
 }
@@ -81,11 +98,21 @@ Licence: MIT
 .pull-right {
   float: right;
 }
+.text-center {
+  text-align: center;
+}
+.text-bold {
+  font-weight: 900;
+  font-size: 24px;
+}
 .align-center {
-  align-items: center !important;
+  align-items: center;
 }
 .justify-center {
-  justify-content: center !important;
+  justify-content: center;
+}
+.space-between {
+  justify-content: space-between;
 }
 .position-relative {
   position: relative;
@@ -116,7 +143,7 @@ Licence: MIT
 }
 
 .bg-primary {
-  background: #fa9529;
+  background: #fa9529 !important;
 }
 
 .bg-black {
@@ -133,8 +160,16 @@ Licence: MIT
   color: #f6b400;
 }
 
+.underline-yellow {
+  border-bottom: 8px solid #f6b400;
+}
+
 .bg-lime {
   background: #f7fdf6;
+}
+
+.bg-lime-conc {
+  background: #e1ebe6;
 }
 /* TODO: FIX THIS */
 .bg-red {
@@ -176,8 +211,25 @@ Licence: MIT
 .w-100 {
   width: 100%;
 }
-/* Margins */
 
+.w-50 {
+  width: 50%;
+}
+
+.w-min {
+  width: 5%;
+}
+
+.w-min-50 {
+  min-width: 50%;
+}
+/* Margins */
+.m-auto {
+  margin: auto;
+}
+.m-3-px {
+  margin: 3px;
+}
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -185,9 +237,24 @@ Licence: MIT
   margin-left: auto;
   margin-right: auto;
 }
+.ms-3{
+  margin-left: 1rem;
+}
+.mt-4 {
+  margin-top: 1.5rem !important;
+}
 
 /* Padding */
-
+.p-4 {
+  padding: 1rem;
+}
+.pb-4-px {
+  padding-bottom: 4px;
+}
+.px-2 {
+  padding-right: 0.5rem !important;
+  padding-left: 0.5rem !important;
+}
 .px-4 {
   padding-right: 1.5rem !important;
   padding-left: 1.5rem !important;
@@ -198,6 +265,9 @@ Licence: MIT
 }
 .pt-5 {
   padding-top: 3rem !important;
+}
+.pt-10{
+  padding-top: 5rem;
 }
 /* Lists */
 li {
@@ -220,7 +290,32 @@ ul {
   font-size: 11px;
   height: 20px;
   width: 20px;
-
   right: 9px;
   top: 10px;
+}
+.ribbon {
+  right: 0;
+  padding: 10px;
+  transform: rotateZ(40deg) translate(27%, -180%);
+}
+.indicator {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #c4c4c4;
+  margin: 0 10px;
+}
+/* Shadows */
+
+.shadow {
+  box-shadow: rgb(0 0 0 / 10%) 0px 4px 12px;
+}
+
+.right {
+  right: 0;
+  top: -100px;
+}
+.right-image2 {
+  right: 250px;
+  top: -100px;
 }
