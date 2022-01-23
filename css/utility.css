@@ -57,6 +57,17 @@ Licence: MIT
   display: none;
 }
 
+/* Overflow */
+.overflow-hidden {
+  overflow: hidden;
+}
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+.overflow-y-hidden {
+  overflow-y: hidden;
+}
+
 /* Utilities */
 
 .border {
@@ -93,10 +104,13 @@ Licence: MIT
   font-size: 24px;
 }
 .align-center {
-  align-items: center !important;
+  align-items: center;
 }
 .justify-center {
-  justify-content: center !important;
+  justify-content: center;
+}
+.space-between {
+  justify-content: space-between;
 }
 .position-relative {
   position: relative;
@@ -192,10 +206,17 @@ Licence: MIT
   width: 100%;
 }
 
+.w-50 {
+  width: 50%;
+}
+
 .w-min {
   width: 5%;
 }
 /* Margins */
+.m-auto {
+  margin: auto;
+}
 .m-3-px {
   margin: 3px;
 }
@@ -212,6 +233,9 @@ Licence: MIT
 }
 
 /* Padding */
+.p-4 {
+  padding: 1rem;
+}
 .pb-4-px {
   padding-bottom: 4px;
 }
@@ -251,7 +275,17 @@ ul {
   font-size: 11px;
   height: 20px;
   width: 20px;
-
   right: 9px;
   top: 10px;
+}
+.ribbon {
+  right: 0;
+  padding: 10px;
+  transform: rotateZ(40deg) translate(27%, -180%);
+}
+
+/* Shadows */
+
+.shadow {
+  box-shadow: rgb(0 0 0 / 10%) 0px 4px 12px;
 }

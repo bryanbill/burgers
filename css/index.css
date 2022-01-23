@@ -124,7 +124,6 @@ a.nav-link.active span {
 }
 .order-btn button {
   outline: none;
-
   padding: 12px 30px;
   border-radius: 50px 50px 0 50px;
 }
@@ -135,7 +134,14 @@ a.nav-link.active span {
   padding: 3rem;
 }
 .desc {
-    padding-top: 10px;
-  font-size: 19px;
+  padding-top: 10px;
+  font-size: 16px;
   line-height: 28px;
+}
+
+/* Menu */
+
+.card {
+  transition: all 0.2s linear;
+  border-radius: 20px;
 }
