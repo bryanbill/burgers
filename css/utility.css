@@ -43,6 +43,7 @@ Licence: MIT
 .col-4 {
   flex: 0 0 auto;
   width: 33.3333%;
+  padding: 4px;
 }
 /* Displays */
 
@@ -247,6 +248,10 @@ Licence: MIT
 }
 .mt-4 {
   margin-top: 1.5rem !important;
+}
+
+.mt-6{
+  margin-top: 3rem !important;
 }
 
 /* Padding */
