@@ -25,7 +25,7 @@ Burger Place is a restaurant that sells burgers. We make mouth watering burgers 
 Head over to [Burger Place](https://bryanbill.github.io/burgers) to get started
 
 ## Copyright
-Copyright © 2020 Bryan Bill. All rights reserved.
+Copyright © 2022 Brian Omondi. All rights reserved.
 
 ## License
 MIT
