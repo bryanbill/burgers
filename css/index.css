@@ -145,3 +145,11 @@ a.nav-link.active span {
   transition: all 0.2s linear;
   border-radius: 20px;
 }
+
+/* Double Decker */
+.left{
+    order: 1;
+}
+.right{
+    order: 2;
+}

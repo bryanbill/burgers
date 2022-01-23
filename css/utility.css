@@ -85,7 +85,9 @@ Licence: MIT
 .border-none {
   border: none;
 }
-
+.border-radius {
+  border-radius: 10px;
+}
 .border-radius-sm {
   border-radius: 25%;
 }
@@ -141,7 +143,7 @@ Licence: MIT
 }
 
 .bg-primary {
-  background: #fa9529;
+  background: #fa9529 !important;
 }
 
 .bg-black {
@@ -164,6 +166,10 @@ Licence: MIT
 
 .bg-lime {
   background: #f7fdf6;
+}
+
+.bg-lime-conc {
+  background: #e1ebe6;
 }
 /* TODO: FIX THIS */
 .bg-red {
@@ -213,6 +219,10 @@ Licence: MIT
 .w-min {
   width: 5%;
 }
+
+.w-min-50 {
+  min-width: 50%;
+}
 /* Margins */
 .m-auto {
   margin: auto;
@@ -227,7 +237,9 @@ Licence: MIT
   margin-left: auto;
   margin-right: auto;
 }
-
+.ms-3{
+  margin-left: 1rem;
+}
 .mt-4 {
   margin-top: 1.5rem !important;
 }
@@ -253,6 +265,9 @@ Licence: MIT
 }
 .pt-5 {
   padding-top: 3rem !important;
+}
+.pt-10{
+  padding-top: 5rem;
 }
 /* Lists */
 li {
@@ -283,9 +298,24 @@ ul {
   padding: 10px;
   transform: rotateZ(40deg) translate(27%, -180%);
 }
-
+.indicator {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #c4c4c4;
+  margin: 0 10px;
+}
 /* Shadows */
 
 .shadow {
   box-shadow: rgb(0 0 0 / 10%) 0px 4px 12px;
+}
+
+.right {
+  right: 0;
+  top: -100px;
+}
+.right-image2 {
+  right: 250px;
+  top: -100px;
 }
